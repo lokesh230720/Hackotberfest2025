@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>digital clock</title>
+    <style>
+      body {
+        background-color: rgb(17, 16, 16);
+        color: azure;
+      }
+
+      .central {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+      }
+      #clock {
+        background-color: olivedrab;
+        font-size: 40px;
+        padding: 8px 32px;
+        border-radius: 20px;
+        margin-top: 20px;
+      }
+      #date {
+        background-color: rgb(189, 34, 34);
+        font-size: 40px;
+        padding: 8px 32px;
+        border-radius: 20px;
+        margin-top: 20px;
+      }
+      #stop{
+        padding: 8px 32px;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 65px;
+        background-color: aqua;
+      }
+      #start{
+        padding: 8px 25px;
+        border-radius: 20px;
+        margin-top: 20px;
+        /* margin-left: 65px; */
+        background-color: aqua;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="central">
+      <div class="banner">
+        <h1>Computer Time</h1>
+        <div id="clock"></div>
+        <div id="date"></div>
+        <button id="stop">Stop</button>
+        <button id="start">Start</button>
+      </div>
+    </div>
+    <script src="clock.js"></script>
+  </body>
+</html>
